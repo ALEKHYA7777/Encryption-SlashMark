@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+        }
+        textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        pre {
+            white-space: pre-wrap; /* Preserve line breaks */
+            word-wrap: break-word; /* Break long words */
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Encryption</h1>
+    <form id="encryption-form">
+        <label for="text">Enter Text:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea>
+        <br>
+        <button type="button" onclick="encryptText()">Encrypt</button>
+        <button type="button" onclick="decryptText()">Decrypt</button>
+    </form>
+    <h2>Encrypted Output:</h2>
+    <pre id="encrypted-output"></pre>
+    <h2>Decrypted Output:</h2>
+    <pre id="decrypted-output"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
